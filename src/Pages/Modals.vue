@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import Modal from './components/Modal.vue';
 import ImgModal from './components/ImgModal.vue';
+import Modal from '../components/Modal.vue';
+import ImgModal from '../components/ImgModal.vue';
 
 let modal1Active = ref(false);
 let modal2Active = ref(false);
@@ -19,7 +21,6 @@ let modal2Active = ref(false);
     </Modal>
 
     <ImgModal :active="modal2Active" @close="modal2Active=false" url="https://picsum.photos/1280/960?r=2"></ImgModal>
+    <ImgModal :active="modal2Active" @close="modal2Active=false" url="https://picsum.photos/1280/960?random=2"></ImgModal>
   </div>
 </template>
-
-<style></style>

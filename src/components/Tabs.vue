@@ -6,6 +6,9 @@ defineProps(['active', 'titles']);
   <div class="tabs is-centered">
     <ul>
       <li v-for="(title, i) in titles" :class="{'is-active': i == active}"><a>{{title}}</a></li>
+      <li v-for="(title,index) in titles" :class="{'is-active': index === active}" @click="$emit('setActive', index)">
+        <a>{{ title }}</a>
+      </li>
     </ul>
   </div>
 </template>
