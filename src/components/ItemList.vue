@@ -1,6 +1,8 @@
 <script setup>
 defineProps(['items', 'title']);
+defineProps(['items', 'title'])
 </script>
+
 <template>
   <h1>{{ title }}</h1>
   <ul>
@@ -9,4 +11,4 @@ defineProps(['items', 'title']);
       <input type="checkbox" v-model="item.isDone">
     </li>
   </ul>
-</template>
+  </template>
