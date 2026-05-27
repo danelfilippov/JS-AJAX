@@ -8,6 +8,7 @@ import Validation from './pages/Validation.vue'
 import ChuckNorris from './pages/ChuckNorris.vue'
 import RickAndMory from './pages/RickAndMory.vue'
 import CanvasExample from './pages/CanvasExample.vue'
+import WebApis from './pages/WebApis.vue'
 
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
@@ -20,6 +21,7 @@ const routes = [
     { path: '/chucknorris', component: ChuckNorris, name: 'Chuck' },
     { path: '/rickandmory', component: RickAndMory, name: 'Rick' },
     { path: '/canvas', component: CanvasExample, name: 'Canvas' },
+    { path: '/Api', component: WebApis, name: 'Api' },
 ]
 
 export const router = createRouter({
