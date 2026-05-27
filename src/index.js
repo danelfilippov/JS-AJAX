@@ -7,8 +7,10 @@ import Messages from './pages/Messages.vue'
 import Validation from './pages/Validation.vue'
 import ChuckNorris from './pages/ChuckNorris.vue'
 import RickAndMory from './pages/RickAndMory.vue'
+import CanvasExample from './pages/CanvasExample.vue'
 
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+
 
 const routes = [
     { path: '/', component: ToDo, name: 'ToDo' },
@@ -17,6 +19,7 @@ const routes = [
     { path: '/validation', component: Validation, name: 'Button' },
     { path: '/chucknorris', component: ChuckNorris, name: 'Chuck' },
     { path: '/rickandmory', component: RickAndMory, name: 'Rick' },
+    { path: '/canvas', component: CanvasExample, name: 'Canvas' },
 ]
 
 export const router = createRouter({
@@ -28,3 +31,4 @@ export const router = createRouter({
 
 const app = createApp(App)
 app.use(router)
+app.mount('#app')

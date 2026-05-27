@@ -1,6 +1,5 @@
 <script setup>
 defineProps(['items', 'title']);
-defineProps(['items', 'title'])
 </script>
 
 <template>

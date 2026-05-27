@@ -1,6 +1,5 @@
 <script setup>
 defineProps(['active', 'url']);
-defineProps(['active', 'url'])
 </script>
 
 <template>

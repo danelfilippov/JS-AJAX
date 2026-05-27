@@ -5,7 +5,7 @@ import Message from '../components/Message.vue'
 </script>
 
 <template>
-  <Message title="*Insert title here">Jaanus on <b>Furry</b></Message>
-  <Message color="primary" size="medium">Sedrik on <b>talumatu</b></Message>
-  <Message color="danger" size="large">Sedrik on <b>talumatu</b></Message>
+  <Message title="*Insert title here">aaaaa <b>11111</b></Message>
+  <Message color="primary" size="medium">bbbbbb <b>22222</b></Message>
+  <Message color="danger" size="large">cccccc <b>333333</b></Message>
 </template>

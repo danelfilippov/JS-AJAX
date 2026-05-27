@@ -1,8 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue';
 import ItemList from '../components/ItemList.vue';
-import { computed, ref } from 'vue'
-import ItemList from '../components/ItemList.vue'
 let i = 1;
 let items = ref([
   {id: i++, text: 'Sai', isDone: true },
@@ -14,16 +12,12 @@ let newItem = ref('');
 
 let doneItems = computed(() => items.value.filter(i => i.isDone));
 let toDoItems = computed(() => items.value.filter(i => !i.isDone));
-let doneItems = computed(() => items.value.filter(i => i.isDone))
-let toDoItems = computed(() => items.value.filter(i => !i.isDone))
 
 function add() {
   if(newItem.value.trim() !== ''){
     items.value.push({id: i++, text: newItem.value.trim(), isDone: false });
-    items.value.push({id: i++, text: newItem.value.trim(), isDone: false })
   }
   newItem.value = '';
-  newItem.value = ''
 }
 </script>
 
