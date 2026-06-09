@@ -9,6 +9,8 @@ import ChuckNorris from './pages/ChuckNorris.vue'
 import RickAndMory from './pages/RickAndMory.vue'
 import CanvasExample from './pages/CanvasExample.vue'
 import WebApis from './pages/WebApis.vue'
+import Leaflet from './pages/Leaflet.vue'
+import Chat from './pages/Chat.vue'
 
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
@@ -22,6 +24,8 @@ const routes = [
     { path: '/rickandmory', component: RickAndMory, name: 'Rick' },
     { path: '/canvas', component: CanvasExample, name: 'Canvas' },
     { path: '/Api', component: WebApis, name: 'Api' },
+    { path: '/leaflet', component: Leaflet, name: 'Leaflet' },
+    { path: '/chat', component: Chat, name: 'Chat' },
 ]
 
 export const router = createRouter({
